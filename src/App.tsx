@@ -8,6 +8,7 @@ import Column from "./components/Col";
 import AddSection from "./components/AddSection";
 import SplashScreen from "./components/SplashScreen";
 import FloatingBackground from "./components/FloatingBackground";
+import Footer from "./components/Footer";
 
 const KanbanBoard: React.FC = () => {
   const [columns, setColumns] = useState<ColumnType[]>(INITIAL_COLUMNS);
@@ -188,6 +189,9 @@ const KanbanBoard: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {/* Footer */}
+          <Footer />
         </div>
       )}
     </>
